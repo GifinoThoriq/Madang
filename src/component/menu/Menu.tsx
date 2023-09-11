@@ -59,20 +59,20 @@ export const Menu = () => {
     },
   ];
 
-  // useEffect(() => {
-  //   GetMenu()
-  //     .then((response) => {
-  //       setMenus(response.data);
-  //     })
-  //     .catch((error) => {
-  //       setMenus(arrMenus);
-  //       console.log(error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    GetMenu()
+      .then((response) => {
+        setMenus(response.data);
+      })
+      .catch((error) => {
+        setMenus(arrMenus);
+        console.log(error);
+      });
+  }, []);
 
   return (
     <MenuContainer>
-      {arrMenus.map((item) => (
+      {Menus.map((item) => (
         <MenuLists
           key={item.id}
           id={item.id}

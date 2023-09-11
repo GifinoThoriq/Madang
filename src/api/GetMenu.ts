@@ -17,7 +17,7 @@ interface Menu {
 export const GetMenu = async (): Promise<ApiResponse<Menu[]>> => {
   try {
     const response: AxiosResponse<Menu[]> = await axios.get(
-      `https://sheet.best/api/sheets/ca770eb1-6828-4193-8210-46e9d2820f85/tabs/menus`
+      `${process.env.REACT_APP_BASE_URL}/tabs/menus`
     );
     return { data: response.data, status: response.status };
   } catch (error) {

@@ -29,7 +29,7 @@ export const PostOrder = async (
 ): Promise<ApiResponse<Response>> => {
   try {
     const response: AxiosResponse<Response> = await axios.post(
-      `https://sheet.best/api/sheets/ca770eb1-6828-4193-8210-46e9d2820f85/tabs/orders`,
+      `${process.env.REACT_APP_BASE_URL}/tabs/orders`,
       dataOrders
     );
     return { data: response.data, status: response.status };
