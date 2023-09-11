@@ -1,0 +1,21 @@
+.cart-item {
+  display: inline-block;
+}
+
+.cart-item > div:first-child {
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item > div:first-child > img {
+  width: 50%;
+}
+
+.cart-item > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  float: right;
+}

@@ -1,0 +1,33 @@
+.cart-modal {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  padding: 16px;
+  height: 500px;
+  top: 61px;
+  right: 8px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cart-modal > section {
+  display: inline-block;
+}
+
+.cart-modal > section > div:first-child {
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.cart-modal > section > div:first-child > img {
+  width: 50%;
+}
+
+.cart-modal > section > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  float: right;
+}

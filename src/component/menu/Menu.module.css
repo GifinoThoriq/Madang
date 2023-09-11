@@ -1,0 +1,5 @@
+.menu {
+  display: grid;
+  grid-gap: 15px;
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.menu-amount {
+  margin-top: 12px;
+}
+
+.menu-amount > input {
+  width: 50%;
+}
+
+.menu-amount > button {
+  width: 46%;
+}
